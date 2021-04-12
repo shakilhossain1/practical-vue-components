@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .btn {
+        @apply capitalize tracking-wider font-semibold text-sm sm:text-base focus:outline-none focus:ring focus:ring-offset-2 inline-block px-5 py-2  rounded;
+  }
+    .btn-primary {
+        @apply text-white bg-indigo-500 hover:bg-indigo-400 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600;
+    }
+    .btn-success {
+        @apply text-white bg-green-500 hover:bg-green-400 focus:ring-green-500 focus:ring-opacity-50 active:bg-green-600;
+    }
+    .btn-secondary {
+        @apply text-gray-800 bg-gray-300 hover:bg-gray-200 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-gray-300;
+    }
+}
